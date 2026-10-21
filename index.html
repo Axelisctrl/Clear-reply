@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f9ff">
+  <meta name="description" content="ClearReply helps people respond to emails with clarity, confidence, and less effort. Choose your intent and prepare a professional reply." />
+  <title>ClearReply — Clearer replies. Less effort.</title>
+  <style>
+    :root{
+      --ink:#14213d;--muted:#64718a;--blue:#2563eb;--blue-dark:#1746b3;--blue-soft:#eaf1ff;
+      --line:#e1e7f2;--paper:#fff;--bg:#f7f9ff;--mint:#e8f8ef;--green:#14804a;
+      --red:#c73742;--red-soft:#fff0f1;--amber:#9a5b12;--amber-soft:#fff4e5;
+      --purple:#7046c5;--purple-soft:#f2edff;--shadow:0 18px 55px rgba(28,53,104,.09);--radius:24px;
+    }
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.55}button,input,textarea{font:inherit}button,a{-webkit-tap-highlight-color:transparent}a{color:inherit;text-decoration:none}button{cursor:pointer}button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid #93b4ff;outline-offset:3px}.container{width:min(1160px,calc(100% - 40px));margin-inline:auto}
+    .nav-wrap{position:sticky;top:0;z-index:20;background:rgba(247,249,255,.88);backdrop-filter:blur(16px);border-bottom:1px solid rgba(225,231,242,.8)}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:inline-flex;align-items:center;gap:11px;font-size:22px;font-weight:850;letter-spacing:-.9px}.brand-mark{width:40px;height:40px;border-radius:13px;background:linear-gradient(145deg,#3983ff,#174cce);display:grid;place-items:center;box-shadow:0 7px 16px rgba(37,99,235,.22)}.brand-mark svg{width:25px;height:25px}.brand-word span{color:var(--blue)}.nav-links{display:flex;align-items:center;gap:31px;font-size:14px;color:#45536d;font-weight:650}.nav-links a:hover{color:var(--blue)}.nav-actions{display:flex;align-items:center;gap:10px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:12px 17px;border-radius:12px;border:1px solid transparent;font-weight:750;font-size:14px;transition:transform .18s,background .18s,border-color .18s;white-space:nowrap}.btn:hover{transform:translateY(-1px)}.btn-primary{background:var(--blue);color:white;box-shadow:0 7px 17px rgba(37,99,235,.2)}.btn-primary:hover{background:var(--blue-dark)}.btn-ghost{background:white;color:var(--ink);border-color:var(--line)}.btn-ghost:hover{border-color:#a9c2ff;background:#fbfcff}.btn-small{padding:10px 14px;font-size:13px;border-radius:10px}.menu-toggle{display:none;background:white;border:1px solid var(--line);border-radius:10px;padding:9px;color:var(--ink)}
+    .hero{padding:74px 0 68px;position:relative;overflow:hidden}.hero:before{content:"";position:absolute;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,rgba(90,144,255,.13),rgba(90,144,255,0) 69%);top:-220px;right:-100px;pointer-events:none}.hero-grid{display:grid;grid-template-columns:1fr .94fr;gap:54px;align-items:center;position:relative}.eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--blue);font-weight:800;letter-spacing:.08em;font-size:11px;text-transform:uppercase;background:#eaf1ff;border:1px solid #d8e5ff;border-radius:99px;padding:8px 12px}.eyebrow-dot{width:7px;height:7px;background:#3477f6;border-radius:50%;box-shadow:0 0 0 4px rgba(52,119,246,.11)}h1{font-size:clamp(42px,5vw,66px);line-height:1.04;letter-spacing:-3.6px;margin:22px 0 22px;max-width:650px}.gradient-text{background:linear-gradient(100deg,#2563eb 8%,#548aff 54%,#7959dc 100%);-webkit-background-clip:text;background-clip:text;color:transparent}.hero-copy{font-size:18px;line-height:1.75;color:#5d6981;max-width:540px;margin:0 0 28px}.hero-actions{display:flex;flex-wrap:wrap;gap:12px}.hero-trust{display:flex;align-items:center;gap:12px;color:#718098;font-size:12px;margin-top:22px}.avatars{display:flex}.avatars span{width:25px;height:25px;display:grid;place-items:center;border:2px solid var(--bg);margin-left:-6px;border-radius:50%;background:#dce9ff;color:#2854a7;font-weight:800;font-size:9px}.avatars span:first-child{margin-left:0;background:#d9f5e7;color:#15724b}.avatars span:nth-child(2){background:#ffe4c5;color:#96561c}.avatars span:nth-child(3){background:#e9dfff;color:#6843a8}
+    .hero-visual{position:relative;min-width:0}.visual-glow{position:absolute;inset:12% 1% 3%;border-radius:40px;background:linear-gradient(140deg,#e5edff,#f2ecff);filter:blur(15px)}.mock-window{position:relative;border:1px solid #e1e7f4;border-radius:22px;background:#fff;box-shadow:0 28px 75px rgba(34,61,119,.16);overflow:hidden;transform:rotate(.7deg)}.mock-top{height:48px;display:flex;align-items:center;gap:8px;padding:0 16px;border-bottom:1px solid #edf0f7;background:#fcfdff}.window-dot{width:8px;height:8px;background:#dbe2ef;border-radius:50%}.mock-appname{margin-left:8px;font-size:11px;font-weight:750;color:#77839a}.mock-inbox{display:grid;grid-template-columns:98px minmax(0,1fr);min-height:355px}.mock-sidebar{background:#fbfcff;border-right:1px solid #edf0f7;padding:17px 9px}.mock-side-line{height:9px;border-radius:5px;background:#e8edf6;margin:0 0 18px;width:69px}.mock-side-line.active{background:#cfdefe;width:80px}.mock-email{padding:22px 18px 16px;min-width:0}.mock-subject{font-size:15px;font-weight:800;letter-spacing:-.3px;margin-bottom:16px}.mock-sender{font-size:10px;font-weight:800;margin-bottom:15px}.mock-sender small{font-weight:500;color:#8994a8}.mock-body{color:#65718a;font-size:10px;line-height:1.8;margin-bottom:22px}.mock-body p{margin:0 0 7px}.mini-panel{border:1px solid #dfe8fb;border-radius:14px;padding:13px;background:linear-gradient(180deg,#fff,#fbfdff)}.mini-header{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:850;margin-bottom:11px}.mini-logo{width:25px;height:25px;border-radius:8px;background:#eaf1ff;color:#2563eb;display:grid;place-items:center}.mini-choices{display:grid;grid-template-columns:1fr 1fr;gap:7px}.mini-choice{display:flex;align-items:center;gap:8px;padding:8px;border:1px solid #e8edf6;border-radius:9px;font-size:9px;font-weight:750;color:#3d4c68;background:white}.mini-icon{width:21px;height:21px;flex:0 0 21px;border-radius:7px;display:grid;place-items:center;font-weight:900}.mini-icon.green{background:var(--mint);color:var(--green)}.mini-icon.red{background:var(--red-soft);color:var(--red)}.mini-icon.blue{background:#e9f1ff;color:var(--blue)}.mini-icon.purple{background:var(--purple-soft);color:var(--purple)}.mini-icon.amber{background:var(--amber-soft);color:var(--amber)}.mini-icon.pink{background:#ffeaf3;color:#bf3273}.floating-pill{position:absolute;display:flex;align-items:center;gap:9px;right:-16px;bottom:-19px;background:#fff;border:1px solid #e5eaf5;border-radius:15px;padding:13px 16px;box-shadow:0 12px 32px rgba(34,61,119,.12);font-size:11px;font-weight:800}.floating-pill b{color:var(--green);font-size:10px}.floating-check{background:var(--mint);color:var(--green);width:26px;height:26px;display:grid;place-items:center;border-radius:9px;font-weight:900}
+    .section{padding:76px 0}.section-heading{text-align:center;max-width:700px;margin:0 auto 38px}.kicker{font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--blue);font-weight:850}.section-heading h2{font-size:clamp(30px,3.8vw,44px);line-height:1.15;letter-spacing:-1.8px;margin:12px 0}.section-heading p{font-size:16px;color:var(--muted);margin:0;line-height:1.75}.how-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.how-card{background:white;border:1px solid var(--line);border-radius:20px;padding:26px;box-shadow:0 8px 26px rgba(36,58,102,.035)}.step-icon{width:48px;height:48px;border-radius:15px;display:grid;place-items:center;background:#eaf1ff;color:var(--blue);margin-bottom:21px}.step-icon svg{width:24px;height:24px}.step-num{color:#91a0b8;text-transform:uppercase;font-size:10px;letter-spacing:.1em;font-weight:850}.how-card h3{font-size:18px;margin:8px 0}.how-card p{font-size:14px;line-height:1.75;color:var(--muted);margin:0}
+    .demo-section{padding:76px 0;background:#eef3ff;border-block:1px solid #e0e8fb}.demo-layout{display:grid;grid-template-columns:.78fr 1.22fr;gap:44px;align-items:start}.demo-copy{position:sticky;top:105px}.demo-copy h2{font-size:clamp(32px,4vw,46px);letter-spacing:-2px;line-height:1.12;margin:14px 0}.demo-copy>p{color:#64718a;line-height:1.8;font-size:15px}.demo-note{display:flex;gap:10px;align-items:flex-start;color:#687790;font-size:12px;line-height:1.7;margin-top:22px}.demo-note svg{width:18px;height:18px;flex:0 0 18px;color:#4b6ed8;margin-top:2px}.demo-card{background:#fff;border:1px solid #dfe6f4;border-radius:23px;overflow:hidden;box-shadow:0 22px 60px rgba(34,61,119,.1)}.demo-card-head{padding:18px 22px;border-bottom:1px solid #eef1f7;display:flex;align-items:center;gap:12px}.demo-logo{width:37px;height:37px;border-radius:12px;background:linear-gradient(145deg,#3983ff,#174cce);display:grid;place-items:center;color:#fff}.demo-logo svg{width:23px;height:23px}.demo-title{font-size:15px;font-weight:850}.demo-subtitle{font-size:11px;color:#8490a6}.demo-badge{margin-left:auto;border-radius:99px;padding:6px 9px;background:#edf4ff;border:1px solid #dce8ff;color:#315fba;font-size:9px;text-transform:uppercase;letter-spacing:.06em;font-weight:850}.demo-content{padding:22px}.field-label{font-weight:800;font-size:11px;display:block;margin:0 0 8px;color:#46546c}.field-row{display:grid;grid-template-columns:.7fr 1.3fr;gap:12px}.field{margin-bottom:17px}.text-input,.text-area{width:100%;border:1px solid #dfe5ef;background:#fcfdff;border-radius:11px;padding:12px 13px;color:var(--ink);font-size:13px;line-height:1.6;transition:border .15s,box-shadow .15s}.text-input:focus,.text-area:focus{outline:none;border-color:#86a9ff;box-shadow:0 0 0 3px rgba(37,99,235,.1)}.text-area{resize:vertical;min-height:108px}.demo-choices-label{font-weight:850;font-size:12px;margin:18px 0 10px}.choices{display:grid;grid-template-columns:repeat(2,1fr);gap:9px}.response-choice{display:flex;align-items:flex-start;gap:11px;text-align:left;background:white;border:1px solid #e2e8f3;border-radius:13px;padding:13px;min-height:79px;transition:border .16s,background .16s,box-shadow .16s;position:relative;color:var(--ink)}.response-choice:hover{border-color:#a9c1fb;background:#fbfcff}.response-choice.selected{border-color:#5b89f4;background:#f0f5ff;box-shadow:0 0 0 2px rgba(37,99,235,.08)}.response-choice.selected:after{content:"✓";position:absolute;top:9px;right:10px;font-size:10px;color:var(--blue);font-weight:950}.response-icon{flex:0 0 31px;width:31px;height:31px;border-radius:10px;display:grid;place-items:center;font-size:15px;font-weight:900}.response-copy{min-width:0;padding-right:4px}.response-title{display:block;font-size:12px;line-height:1.35;font-weight:850;margin:1px 0 4px}.response-desc{display:block;font-size:10px;line-height:1.5;color:#758199}.response-choice[data-kind="agree"] .response-icon{background:var(--mint);color:var(--green)}.response-choice[data-kind="decline"] .response-icon{background:var(--red-soft);color:var(--red)}.response-choice[data-kind="details"] .response-icon{background:#eaf1ff;color:var(--blue)}.response-choice[data-kind="later"] .response-icon{background:var(--purple-soft);color:var(--purple)}.response-choice[data-kind="meeting"] .response-icon{background:var(--amber-soft);color:var(--amber)}.response-choice[data-kind="keep"] .response-icon{background:#ffeaf3;color:#bf3273}.draft-wrap{margin-top:21px;padding-top:19px;border-top:1px solid #edf0f7}.draft-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:9px}.draft-heading{font-size:12px;font-weight:900}.draft-state{font-size:10px;color:var(--green);font-weight:750}.draft-area{min-height:162px;background:#fcfdff}.draft-actions{display:flex;align-items:center;flex-wrap:wrap;gap:9px;margin-top:12px}.demo-status{font-size:11px;color:var(--green);min-height:17px;margin-left:auto}.mini-action{padding:10px 13px;border-radius:10px;font-size:12px}.demo-disclaimer{color:#8b96aa;font-size:10px;line-height:1.6;margin-top:11px}
+    .benefit-band{padding:44px 0}.benefit-inner{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.benefit{display:flex;align-items:flex-start;gap:13px}.benefit-icon{width:39px;height:39px;border-radius:12px;background:#eaf1ff;color:var(--blue);display:grid;place-items:center;flex:0 0 39px}.benefit-icon svg{width:19px;height:19px}.benefit h3{font-size:14px;margin:2px 0 4px}.benefit p{font-size:12px;color:var(--muted);line-height:1.65;margin:0}
+    .cta-section{padding:36px 0 78px}.cta-box{border-radius:27px;background:linear-gradient(115deg,#173a92,#2563eb 58%,#7559d4);color:white;padding:48px 50px;display:flex;align-items:center;justify-content:space-between;gap:32px;position:relative;overflow:hidden}.cta-box:after{content:"";position:absolute;width:300px;height:300px;border-radius:50%;right:17%;top:-220px;border:1px solid rgba(255,255,255,.18);box-shadow:0 0 0 35px rgba(255,255,255,.035),0 0 0 70px rgba(255,255,255,.025)}.cta-copy{position:relative;z-index:1;max-width:620px}.cta-copy h2{font-size:clamp(27px,3.5vw,39px);letter-spacing:-1.4px;line-height:1.15;margin:0 0 11px}.cta-copy p{color:#dbe6ff;font-size:14px;line-height:1.75;margin:0}.cta-box .btn{position:relative;z-index:1;background:white;color:#204fc2;flex:0 0 auto}.footer{padding:28px 0 35px;border-top:1px solid var(--line);background:#fbfcff}.footer-row{display:flex;align-items:center;justify-content:space-between;gap:20px}.footer .brand{font-size:18px}.footer .brand-mark{width:33px;height:33px;border-radius:10px}.footer .brand-mark svg{width:21px;height:21px}.footer-copy{color:#8994a7;font-size:11px;text-align:right;line-height:1.8}
+    @media(max-width:960px){.hero-grid{gap:32px;grid-template-columns:1fr .9fr}.nav-links{gap:18px}.mock-inbox{grid-template-columns:75px 1fr}.mock-sidebar{padding:17px 7px}.mock-side-line{width:55px}.mock-side-line.active{width:60px}.mini-choice{padding:7px 6px;gap:5px}.mini-icon{width:18px;height:18px;flex-basis:18px}.demo-layout{gap:26px;grid-template-columns:.7fr 1.3fr}}
+    @media(max-width:760px){.container{width:min(100% - 28px,600px)}.nav{height:66px}.menu-toggle{display:inline-flex;align-items:center;justify-content:center}.nav-links{display:none;position:absolute;top:65px;left:0;right:0;padding:18px 22px;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 12px 18px rgba(20,33,61,.06);flex-direction:column;align-items:stretch;gap:0}.nav-links.open{display:flex}.nav-links a{padding:12px 0}.nav-actions .btn-ghost{display:none}.hero{padding:52px 0 60px}.hero-grid{grid-template-columns:1fr;gap:40px}.hero h1{letter-spacing:-2.3px}.hero-copy{font-size:16px}.hero-visual{max-width:570px;margin-inline:auto;width:100%}.floating-pill{right:2px}.section{padding:60px 0}.how-grid{grid-template-columns:1fr}.how-card{padding:22px}.demo-section{padding:60px 0}.demo-layout{grid-template-columns:1fr}.demo-copy{position:static}.demo-copy h2{font-size:36px}.benefit-inner{grid-template-columns:1fr;gap:22px}.cta-box{padding:31px 25px;display:block}.cta-box .btn{margin-top:23px}.footer-row{align-items:flex-start;flex-direction:column}.footer-copy{text-align:left}.cta-section{padding-bottom:55px}}
+    @media(max-width:460px){.brand{font-size:20px}.brand-mark{width:36px;height:36px}.hero-actions .btn{flex:1}.hero-trust{align-items:flex-start}.mock-inbox{grid-template-columns:1fr}.mock-sidebar{display:none}.mock-email{padding:18px 13px 13px}.mock-subject{font-size:13px}.mock-body{font-size:9px}.mini-panel{padding:10px}.mini-choices{grid-template-columns:1fr 1fr}.floating-pill{font-size:10px;padding:10px 12px;bottom:-17px}.field-row{grid-template-columns:1fr;gap:0}.choices{grid-template-columns:1fr}.response-choice{min-height:68px}.demo-content{padding:17px 14px}.demo-card-head{padding:14px}.demo-badge{font-size:8px;padding:5px 7px}.draft-actions .btn{flex:1}.demo-status{width:100%;margin-left:0}}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
+  </style>
+</head>
+<body>
+  <div class="nav-wrap">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="ClearReply home">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M4 8.5A3.5 3.5 0 0 1 7.5 5h17A3.5 3.5 0 0 1 28 8.5v13a3.5 3.5 0 0 1-3.5 3.5h-17A3.5 3.5 0 0 1 4 21.5v-13Z" stroke="white" stroke-width="2.3"/><path d="m5.5 8 10.5 8 10.5-8" stroke="white" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M24.5 2.5v5M22 5h5" stroke="#C9DCFF" stroke-width="2" stroke-linecap="round"/></svg></span>
+        <span class="brand-word">Clear<span>Reply</span></span>
+      </a>
+      <div class="nav-links" id="navLinks"><a href="#how-it-works">How it works</a><a href="#try-demo">Try the demo</a><a href="#benefits">Benefits</a></div>
+      <div class="nav-actions"><a class="btn btn-ghost btn-small" href="#how-it-works">Explore ClearReply</a><a class="btn btn-primary btn-small" href="#try-demo">Try the demo <span aria-hidden="true">↗</span></a><button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button></div>
+    </nav>
+  </div>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy-wrap">
+          <div class="eyebrow"><span class="eyebrow-dot"></span> A clearer way to reply</div>
+          <h1>Every email deserves a <span class="gradient-text">clear reply.</span></h1>
+          <p class="hero-copy">ClearReply helps you turn incoming messages into thoughtful, professional responses—based on what you want to say, not a blank page.</p>
+          <div class="hero-actions"><a class="btn btn-primary" href="#try-demo">Try ClearReply <span aria-hidden="true">→</span></a><a class="btn btn-ghost" href="#how-it-works"><span aria-hidden="true">▷</span> See how it works</a></div>
+          <div class="hero-trust"><div class="avatars" aria-hidden="true"><span>✓</span><span>↗</span><span>✦</span></div><span>Clearer communication, one response at a time.</span></div>
+        </div>
+        <div class="hero-visual" aria-label="Illustration of ClearReply response choices in an email interface">
+          <div class="visual-glow"></div>
+          <div class="mock-window">
+            <div class="mock-top"><span class="window-dot"></span><span class="window-dot"></span><span class="window-dot"></span><span class="mock-appname">Email · Message preview</span></div>
+            <div class="mock-inbox">
+              <div class="mock-sidebar"><div class="mock-side-line active"></div><div class="mock-side-line"></div><div class="mock-side-line"></div><div class="mock-side-line"></div><div class="mock-side-line"></div></div>
+              <div class="mock-email"><div class="mock-subject">A chance to work together</div><div class="mock-sender">Bright Ideas Team <small>· to you</small></div><div class="mock-body"><p>Hi Axel,</p><p>We came across your work and would love to explore the possibility of working together on an upcoming project.</p><p>Would you be interested in discussing this further?</p><p>Best,<br>Jordan</p></div>
+                <div class="mini-panel"><div class="mini-header"><span class="mini-logo">✦</span> ClearReply <span style="margin-left:auto;color:#8190a9;font-size:9px;font-weight:600">RESPONSE OPTIONS</span></div><div class="mini-choices">
+                  <div class="mini-choice"><span class="mini-icon green">✓</span>Agree / interested</div><div class="mini-choice"><span class="mini-icon red">×</span>Politely decline</div><div class="mini-choice"><span class="mini-icon blue">?</span>Ask for details</div><div class="mini-choice"><span class="mini-icon purple">◷</span>Reply later</div><div class="mini-choice"><span class="mini-icon amber">▦</span>Suggest a meeting</div><div class="mini-choice"><span class="mini-icon pink">♡</span>Keep in touch</div>
+                </div></div>
+              </div>
+            </div>
+          </div>
+          <div class="floating-pill"><span class="floating-check">✓</span><span>Reply shaped around your intent<br><b>Human-reviewed, always</b></span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="how-it-works">
+      <div class="container"><div class="section-heading"><span class="kicker">Simple by design</span><h2>From incoming email to a clearer answer.</h2><p>Start with the message you received. Choose what you want to communicate. Review a draft that you can make your own.</p></div>
+        <div class="how-grid">
+          <article class="how-card"><div class="step-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg></div><div class="step-num">Step 01</div><h3>Read the message</h3><p>Someone invites you to collaborate, asks a question, or needs a decision. Start with the email in front of you.</p></article>
+          <article class="how-card"><div class="step-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v3m0 12v3M3 12h3m12 0h3"/><circle cx="12" cy="12" r="6"/><path d="m9.5 12 1.7 1.7 3.5-3.7"/></svg></div><div class="step-num">Step 02</div><h3>Choose your intent</h3><p>Agree, decline politely, ask for more information, request time, suggest a meeting, or keep the door open.</p></article>
+          <article class="how-card"><div class="step-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9Z"/><path d="M14 3v6h6M8 13h8M8 17h6"/></svg></div><div class="step-num">Step 03</div><h3>Review and respond</h3><p>Get a draft to edit, personalize, and copy. You stay in control of the final message and when it gets sent.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="demo-section" id="try-demo">
+      <div class="container demo-layout">
+        <div class="demo-copy"><span class="kicker">Try the interactive preview</span><h2>Your intent.<br><span class="gradient-text">A clearer reply.</span></h2><p>Try a common situation: someone reaches out and says they'd love to work with you. Select how you'd like to respond and adjust the draft to sound like you.</p><div class="demo-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 11v5m0-8h.01"/></svg><span>This website preview uses local templates. It does not connect to your inbox or send emails. A live AI integration can be added separately.</span></div></div>
+        <div class="demo-card">
+          <div class="demo-card-head"><div class="demo-logo"><svg viewBox="0 0 32 32" fill="none"><path d="M4 8.5A3.5 3.5 0 0 1 7.5 5h17A3.5 3.5 0 0 1 28 8.5v13a3.5 3.5 0 0 1-3.5 3.5h-17A3.5 3.5 0 0 1 4 21.5v-13Z" stroke="white" stroke-width="2.3"/><path d="m5.5 8 10.5 8 10.5-8" stroke="white" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M24.5 2.5v5M22 5h5" stroke="#C9DCFF" stroke-width="2" stroke-linecap="round"/></svg></div><div><div class="demo-title">ClearReply</div><div class="demo-subtitle">Prepare a professional response</div></div><span class="demo-badge">Live preview</span></div>
+          <div class="demo-content">
+            <div class="field-row"><div class="field"><label class="field-label" for="senderName">Sender's first name</label><input class="text-input" id="senderName" value="Jordan" maxlength="50" autocomplete="off"></div><div class="field"><label class="field-label" for="yourName">Your sign-off name</label><input class="text-input" id="yourName" value="Axel" maxlength="50" autocomplete="off"></div></div>
+            <div class="field"><label class="field-label" for="incomingMessage">Incoming message</label><textarea class="text-area" id="incomingMessage">Hi Axel,\n\nWe came across your work and would love to explore the possibility of working together on an upcoming project. Would you be interested in discussing this further?\n\nBest,\nJordan</textarea></div>
+            <div class="demo-choices-label">How would you like to respond?</div>
+            <div class="choices" role="group" aria-label="Choose a response type">
+              <button type="button" class="response-choice selected" data-kind="agree" aria-pressed="true"><span class="response-icon">✓</span><span class="response-copy"><span class="response-title">Agree / I'm interested</span><span class="response-desc">Show interest and discuss next steps.</span></span></button>
+              <button type="button" class="response-choice" data-kind="decline" aria-pressed="false"><span class="response-icon">×</span><span class="response-copy"><span class="response-title">Politely decline</span><span class="response-desc">Say no in a professional, considerate way.</span></span></button>
+              <button type="button" class="response-choice" data-kind="details" aria-pressed="false"><span class="response-icon">?</span><span class="response-copy"><span class="response-title">Ask for more information</span><span class="response-desc">Learn about the scope and expectations.</span></span></button>
+              <button type="button" class="response-choice" data-kind="later" aria-pressed="false"><span class="response-icon">◷</span><span class="response-copy"><span class="response-title">Need time / reply later</span><span class="response-desc">Acknowledge the message while you consider.</span></span></button>
+              <button type="button" class="response-choice" data-kind="meeting" aria-pressed="false"><span class="response-icon">▦</span><span class="response-copy"><span class="response-title">Suggest a meeting</span><span class="response-desc">Move the discussion to a call or meeting.</span></span></button>
+              <button type="button" class="response-choice" data-kind="keep" aria-pressed="false"><span class="response-icon">♡</span><span class="response-copy"><span class="response-title">Not now, keep in touch</span><span class="response-desc">Leave the door open for another time.</span></span></button>
+            </div>
+            <div class="draft-wrap"><div class="draft-head"><label class="draft-heading" for="replyDraft">Suggested reply</label><span class="draft-state" id="draftState">● Ready to review</span></div><textarea class="text-area draft-area" id="replyDraft" spellcheck="true" aria-label="Editable suggested reply"></textarea><div class="draft-actions"><button class="btn btn-primary mini-action" type="button" id="copyReply"><span aria-hidden="true">▢</span> Copy reply</button><button class="btn btn-ghost mini-action" type="button" id="refreshReply">↻ Regenerate</button><button class="btn btn-ghost mini-action" type="button" id="resetDemo">Reset</button><span class="demo-status" id="demoStatus" role="status" aria-live="polite"></span></div><div class="demo-disclaimer">Preview only: these sample drafts are created in your browser using local templates. Review and personalize your reply before using it.</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefit-band" id="benefits"><div class="container benefit-inner">
+      <div class="benefit"><div class="benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><div><h3>Less time staring at a blank page</h3><p>Start from a relevant response instead of drafting every reply from scratch.</p></div></div>
+      <div class="benefit"><div class="benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3 5 6v5c0 5 3 8 7 10 4-2 7-5 7-10V6l-7-3Z"/><path d="m9 12 2 2 4-4"/></svg></div><div><h3>You stay in control</h3><p>Choose the intent, edit the wording, and decide what gets sent.</p></div></div>
+      <div class="benefit"><div class="benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5h16v11H8l-4 4V5Z"/><path d="M8 9h8M8 12h5"/></svg></div><div><h3>Built around real situations</h3><p>Accept, decline, ask questions, request time, or continue the conversation.</p></div></div>
+    </div></section>
+
+    <section class="cta-section"><div class="container"><div class="cta-box"><div class="cta-copy"><h2>Make your next reply a little easier.</h2><p>Try the ClearReply preview and see how a simple choice can help you get started with your response.</p></div><a class="btn" href="#try-demo">Try the interactive demo <span aria-hidden="true">→</span></a></div></div></section>
+  </main>
+
+  <footer class="footer"><div class="container footer-row"><a class="brand" href="#home"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M4 8.5A3.5 3.5 0 0 1 7.5 5h17A3.5 3.5 0 0 1 28 8.5v13a3.5 3.5 0 0 1-3.5 3.5h-17A3.5 3.5 0 0 1 4 21.5v-13Z" stroke="white" stroke-width="2.3"/><path d="m5.5 8 10.5 8 10.5-8" stroke="white" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="brand-word">Clear<span>Reply</span></span></a><div class="footer-copy">ClearReply · Clearer replies. Less effort.<br>Independent concept website · Not affiliated with Google or Gmail.</div></div></footer>
+
+  <script>
+    (() => {
+      'use strict';
+      const $ = (id) => document.getElementById(id);
+      const senderInput = $('senderName');
+      const yourNameInput = $('yourName');
+      const incomingInput = $('incomingMessage');
+      const draft = $('replyDraft');
+      const status = $('demoStatus');
+      const draftState = $('draftState');
+      const buttons = [...document.querySelectorAll('.response-choice')];
+      let selectedKind = 'agree';
+
+      const cleanName = (value, fallback) => {
+        const name = String(value || '').trim().replace(/[<>\r\n]/g, '').slice(0, 50);
+        return name || fallback;
+      };
+      const escapePlain = (text) => String(text || '').replace(/\r/g, '').trim();
+      const getTemplates = (sender, yourName) => ({
+        agree: `Hi ${sender},\n\nThank you for reaching out and for considering me for this opportunity. I'd be interested in learning more and exploring how we might work together. Please share the next steps and any details you think would be helpful.\n\nBest regards,\n${yourName}`,
+        decline: `Hi ${sender},\n\nThank you for reaching out and thinking of me for this opportunity. I appreciate the invitation, but I'm unable to commit to this at the moment. I wish you and your team every success, and I hope we may have a chance to connect in the future.\n\nBest regards,\n${yourName}`,
+        details: `Hi ${sender},\n\nThank you for reaching out. I'd be open to learning more before deciding. Could you share a little more about the project's goals, expected timeline, responsibilities, and what you have in mind for our collaboration?\n\nLooking forward to hearing more.\n\nBest regards,\n${yourName}`,
+        later: `Hi ${sender},\n\nThank you for thinking of me. I appreciate the opportunity and would like a little time to consider the details before giving you a clear answer. I'll get back to you as soon as I can.\n\nBest regards,\n${yourName}`,
+        meeting: `Hi ${sender},\n\nThank you for reaching out. I'd be happy to have a conversation and learn more about the opportunity. Would you be available for a short meeting next week? Feel free to share a few times that work for you.\n\nBest regards,\n${yourName}`,
+        keep: `Hi ${sender},\n\nThank you for reaching out and considering me. I can't take this on right now, but I'd be glad to stay in touch and hear about future opportunities that may be a better fit.\n\nWishing you all the best,\n${yourName}`
+      });
+
+      function updateDraft({reset = false} = {}) {
+        const sender = cleanName(senderInput.value, 'there');
+        const yourName = cleanName(yourNameInput.value, 'Your name');
+        const incoming = escapePlain(incomingInput.value);
+        if (!incoming) {
+          status.textContent = 'Add an incoming message first.';
+          incomingInput.focus();
+          return;
+        }
+        const templates = getTemplates(sender, yourName);
+        // Re-render from the selected intent; current prototype deliberately uses templates locally.
+        draft.value = templates[selectedKind];
+        draftState.textContent = '● Ready to review';
+        status.textContent = reset ? 'Draft reset.' : 'Draft updated.';
+        window.setTimeout(() => { if (status.textContent === 'Draft updated.' || status.textContent === 'Draft reset.') status.textContent = ''; }, 2400);
+      }
+
+      function selectKind(kind) {
+        selectedKind = kind;
+        buttons.forEach((button) => {
+          const chosen = button.dataset.kind === kind;
+          button.classList.toggle('selected', chosen);
+          button.setAttribute('aria-pressed', String(chosen));
+        });
+        updateDraft();
+      }
+
+      buttons.forEach((button) => button.addEventListener('click', () => selectKind(button.dataset.kind)));
+      $('refreshReply').addEventListener('click', () => updateDraft());
+      senderInput.addEventListener('change', () => updateDraft());
+      yourNameInput.addEventListener('change', () => updateDraft());
+      $('resetDemo').addEventListener('click', () => {
+        senderInput.value = 'Jordan';
+        yourNameInput.value = 'Axel';
+        incomingInput.value = 'Hi Axel,\n\nWe came across your work and would love to explore the possibility of working together on an upcoming project. Would you be interested in discussing this further?\n\nBest,\nJordan';
+        selectKind('agree');
+        status.textContent = 'Example restored.';
+        window.setTimeout(() => { if (status.textContent === 'Example restored.') status.textContent = ''; }, 2400);
+      });
+      $('copyReply').addEventListener('click', async () => {
+        if (!draft.value.trim()) { status.textContent = 'There is no draft to copy.'; return; }
+        try {
+          if (navigator.clipboard && window.isSecureContext) {
+            await navigator.clipboard.writeText(draft.value);
+          } else {
+            draft.focus(); draft.select();
+            const copied = document.execCommand('copy');
+            if (!copied) throw new Error('Clipboard permission unavailable');
+          }
+          status.textContent = 'Reply copied to clipboard.';
+        } catch (error) {
+          draft.focus(); draft.select();
+          status.textContent = 'Draft selected. Press Ctrl+C to copy.';
+        }
+        window.setTimeout(() => { if (/copied|Ctrl\+C/.test(status.textContent)) status.textContent = ''; }, 3200);
+      });
+
+      const menuToggle = $('menuToggle');
+      const navLinks = $('navLinks');
+      menuToggle.addEventListener('click', () => {
+        const isOpen = navLinks.classList.toggle('open');
+        menuToggle.setAttribute('aria-expanded', String(isOpen));
+        menuToggle.setAttribute('aria-label', isOpen ? 'Close navigation' : 'Open navigation');
+      });
+      navLinks.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        menuToggle.setAttribute('aria-expanded', 'false');
+      }));
+      updateDraft();
+    })();
+  </script>
+</body>
+</html>
